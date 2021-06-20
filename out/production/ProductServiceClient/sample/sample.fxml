@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="692.0" prefWidth="684.0">
+         <children>
+            <Button layoutX="496.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#GetButtonPressed" prefHeight="34.0" prefWidth="159.0" text="Get Products" />
+            <TextArea fx:id="UserInput" layoutX="14.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="140.0" prefWidth="463.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextArea>
+            <Button layoutX="496.0" layoutY="207.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SortButtonPressed" prefHeight="34.0" prefWidth="159.0" text="Sort by price" />
+            <Button layoutX="496.0" layoutY="243.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#CompareButtonPressed" prefHeight="34.0" prefWidth="159.0" text="Compare" />
+            <ListView fx:id="AllList" cache="true" depthTest="DISABLE" editable="true" layoutX="14.0" layoutY="207.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="463.0" />
+            <Label layoutX="34.0" layoutY="432.0" text="Comparison based on Basic Information" />
+            <Label layoutX="349.0" layoutY="432.0" minHeight="-Infinity" minWidth="-Infinity" text="Comparison based on Comments and Rating  " />
+            <ListView fx:id="BasicInfoList" layoutX="14.0" layoutY="460.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="219.0" prefWidth="294.0" />
+            <ListView fx:id="CommentRatingList" layoutX="349.0" layoutY="460.0" prefHeight="219.0" prefWidth="294.0" />
+         </children></Pane>
+   </children>
+   <padding>
+      <Insets top="4.0" />
+   </padding>
+</GridPane>
